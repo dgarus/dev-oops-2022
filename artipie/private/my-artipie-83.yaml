@@ -1,0 +1,4 @@
+meta:
+  storage:
+    type: fs
+    path: /Users/denisgarus/projects/workshop/artipie/private/repo
