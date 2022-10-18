@@ -2,6 +2,8 @@
 
 [Download Artipie](https://github.com/artipie/artipie/releases)
 
+[Artipie wiki](https://github.com/artipie/artipie/wiki)
+
 $ java -jar ./artipie-v0.27.1-jar-with-dependencies.jar \
 	--config-file={path}/artipie/private/my-artipie-83.yaml \
 	--port=8083
@@ -12,11 +14,11 @@ $ java -jar ./artipie-v0.27.1-jar-with-dependencies.jar \
 	--port=8084
 
 $ mvn deploy:deploy-file \
-	-DgroupId=org.example \
-	-DartifactId=hello-lib \
-	-Dversion=1.0-SNAPSHOT \
+	-DgroupId={group-id} \
+	-DartifactId={artifact-id} \
+	-Dversion={version} \
 	-Dfile={path-to-jar} \
-	-Durl=http://localhost:8083/my-maven/
+	-Durl={host}:{port}/{repo-name}/
 
 $ mvn -s {path}/my-maven-settings.xml compile
 
