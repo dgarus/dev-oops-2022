@@ -1,0 +1,11 @@
+repo:
+  type: maven-proxy
+  remotes:
+    - 
+      url: http://localhost:8083/my-maven
+    - 
+      url: https://repo.maven.apache.org/maven2
+      cache:
+        storage:
+          type: fs
+          path: /Users/denisgarus/projects/workshop/data/public-cache
