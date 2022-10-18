@@ -1,0 +1,5 @@
+repo:
+  type: maven
+  storage:
+    type: fs
+    path: /Users/denisgarus/projects/workshop/data/private
